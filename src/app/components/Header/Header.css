@@ -1,0 +1,12 @@
+.carousel {
+  height: -moz-calc(100vh - 80vh);
+  height: -webkit-calc(100vh - 80vh);
+  height: calc(100vh - 80vh);
+  background: #282c34;
+}
+
+.react-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 20vmin;
+  pointer-events: none;
+}
