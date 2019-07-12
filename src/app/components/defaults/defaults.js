@@ -12,10 +12,6 @@ import {
 } from '../../modules/default/defaults.selectors'
 
 class Defaults extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     const { mainText, linkText } = this.props
     return (

@@ -21,7 +21,7 @@ code {
 }
 
 .container {
-  height: 100vh;
+  height: 5000px;
 }
 
 .header {
@@ -48,6 +48,9 @@ code {
   height: -webkit-calc(100vh - 26vh);
   height: calc(100vh - 26vh);
   flex: 4 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {

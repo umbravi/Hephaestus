@@ -1,23 +1,33 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
+import { HOME, HELLO, WORLD } from '../../paths'
 import Defaults from '../defaults/defaults'
+import './MainWindow.css'
 
 class MainWindow extends React.PureComponent {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
+    const placeholderStyle = {
+      color: `white`,
+      height: `100%`,
+    }
     return (
       <Switch>
-        <Route exact path="/" component={Defaults} />
+        <Route exact path={HOME} component={Defaults} />
         <Route
-          path="/hello"
-          render={() => <div style={{ color: 'white' }}>hello</div>}
+          path={HELLO}
+          render={() => (
+            <div className="mainContent" style={placeholderStyle}>
+              Hello
+            </div>
+          )}
         />
         <Route
-          path="/world"
-          render={() => <div style={{ color: 'white' }}>world</div>}
+          path={WORLD}
+          render={() => (
+            <div className="mainContent" style={placeholderStyle}>
+              world
+            </div>
+          )}
         />
       </Switch>
     )

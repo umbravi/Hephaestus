@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button, Figure } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
 import './Info.css'
 
 class Info extends React.PureComponent {
