@@ -20,10 +20,6 @@ code {
   background: #262a31;
 }
 
-.container {
-  height: 5000px;
-}
-
 .header {
   height: -moz-calc(100vh - 80vh);
   height: -webkit-calc(100vh - 8vh);
